@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bona Nova', serif;                                        
+}
+.navbar{
+    background-color: whitesmoke;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+}
+.right-sidebar{
+    display: flex;
+}
+.right-sidebar div{
+ padding-right: 10px;
+}
+.left-sidebar{
+    display: flex;
+}
+.left-sidebar div{
+    padding-left: 10px;
+}
+.left-sidebar div a:hover{
+    border-bottom: dotted;
+    border-bottom-color: black;
+}
+.right-sidebar div a:hover{
+    border-bottom: dotted;
+    border-bottom-color: black;
+}
+.title{
+    font-size: 30px;
+}
+.section1{
+    display: flex;
+    padding: 12px 10px;
+    justify-content: space-between;
+}
+.section2{
+    display: flex;
+    padding: 12px 10px;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.navbar .section2 div{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar .section2 div a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar div a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    padding: 8px;
+    justify-content: center;
+    background-color: white;
+}
+.shop-item{
+    max-width: 200px;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.btn-cart{
+    background-color: white;
+    width: 150px;
+    font-size: 18px;
+    color: rgb(39, 22, 22);
+    outline: none;
+    border: 1px dotted black;
+    margin-top: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.btn-cart:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+h2{
+font-size: 15px;
+}
+@media screen and (max-width: 700px){
+    .navbar{
+        position: initial;
+    }
+    .section1{
+        display: flexbox;
+        text-align: center;
+    }
+    .section2{
+        display: block;
+        padding: 0;
+        justify-content: left;
+        
+    }
+    .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+    .shop-item{
+        max-width: 2000px;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    
+
+}
+
